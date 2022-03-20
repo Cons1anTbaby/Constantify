@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../src/index.css"/>
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -22,7 +23,45 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="root__container">
+        <div class="root__header">
+          <div class="header__move-options">Опции перехода</div>
+          <div class="header__space"></div>
+          <button class="header__user-plan">Сменить Тариф</button>
+          <div class="header__user">Пользователь</div>
+        </div>
+        <nav class="root__menu">
+          <div class="menu__container">
+            <img class="logo" src="../assets/logo/logo.png">
+            <ul class="menu__list">
+              <li class="menu__item">Главная</li>
+              <li class="menu__item">Поиск</li>
+              <li class="menu__item">Моя медиатека</li>
+            </ul>
+            <div class="menu__playlists">
+              <div class="playlists__item">Создать плейлист</div>
+              <div class="playlists__item">Любимые треки</div>
+              <ul class="playlists__list">
+                <li class="playlist">Air vibrations</li>
+                <li class="playlist">Открытия недели</li>
+                <li class="playlist">Радио новинок</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="root__main-content">Main</div>
+        <div class="root__playing-music">
+          <div class="playing__info">
+            <div class="playing__logo"></div>
+            <div class="playing__name">Название трека</div>
+            <div class="playing__like">Нравится</div>
+          </div>
+          <div class="player">Плеер</div>
+          <div class="playing__options">Опции</div>
+        </div>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
